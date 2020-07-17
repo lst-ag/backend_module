@@ -1,7 +1,8 @@
 # Change log
 
 ## dev-master
-- Allow installation on TYPO3 CMS 10
+- [!!!] Change vendor prefix from `CHF` to `LST`
+- Support TYPO3 CMS 10 LTS
 - Drop support for TYPO3 CMS 7 & 8
 - Remove deprecated traits `HiddenTrait`, `PidTrait`, `TimestampableTrait` and `UidTrait`
 - Remove obsolete traits `UidAware` and `PidAware` because these methods are implemented on the `AbstractDomainObject`

@@ -1,5 +1,5 @@
 {
-  "name": "chf/backend-module",
+  "name": "lst/backend-module",
   "type": "typo3-cms-extension",
   "description": "A convenience extension for quickly creating TYPO3 backend modules",
   "keywords": [
@@ -10,7 +10,7 @@
   "authors": [
     {
       "name": "Christian Fries",
-      "email": "hello@christian-fries.ch",
+      "email": "christian.fries@lst.team",
       "role": "Developer"
     }
   ],
@@ -18,9 +18,12 @@
   "require": {
     "typo3/cms-core": "~9.5.17 || ~10.4.2"
   },
+  "replace": {
+    "chf/backend-module": "*"
+  },
   "autoload": {
     "psr-4": {
-      "CHF\\BackendModule\\": "Classes"
+      "LST\\BackendModule\\": "Classes"
     }
   }
 }
