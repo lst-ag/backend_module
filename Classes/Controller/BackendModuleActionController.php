@@ -33,8 +33,6 @@ use TYPO3\CMS\Extbase\Mvc\View\ViewInterface;
 use TYPO3\CMS\Extbase\Mvc\Web\Routing\UriBuilder;
 
 /**
- * BackendModule Controller
- *
  * Extend this controller to get convenience methods for backend modules
  */
 class BackendModuleActionController extends ActionController
