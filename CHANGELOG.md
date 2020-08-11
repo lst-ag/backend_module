@@ -1,6 +1,6 @@
 # Change log
 
-## dev-master
+## Version 2.0.0
 - [!!!] Change vendor prefix from `CHF` to `LST`
 - Support TYPO3 CMS 10 LTS
 - Drop support for TYPO3 CMS 7 & 8
