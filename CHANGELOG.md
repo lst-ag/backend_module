@@ -1,6 +1,6 @@
 # Change log
 
-## dev-master
+## Version 2.1.0
 - Add configuration for Symfony dependency injection
 - Bring back `$_EXTKEY` in `ext_emconf.php` due to TER limitations
 
