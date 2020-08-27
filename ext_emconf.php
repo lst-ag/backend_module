@@ -1,6 +1,6 @@
 <?php
 
-$EM_CONF['backend_module'] = [
+$EM_CONF[$_EXTKEY] = [
     'title' => 'Backend Module',
     'description' => 'A convenience extension for quickly creating TYPO3 backend modules',
     'category' => 'be',

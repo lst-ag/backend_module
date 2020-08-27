@@ -1,5 +1,8 @@
 # Change log
 
+## dev-master
+- Bring back `$_EXTKEY` in `ext_emconf.php` due to TER limitations
+
 ## Version 2.0.0
 - [!!!] Change vendor prefix from `CHF` to `LST`
 - Support TYPO3 CMS 10 LTS
