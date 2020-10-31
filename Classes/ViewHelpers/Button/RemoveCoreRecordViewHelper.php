@@ -65,14 +65,14 @@ class RemoveCoreRecordViewHelper extends AbstractViewHelper
         $url = (string) $uriBuilder->buildUriFromRoute('tce_db', $urlParameters);
 
         $title = htmlspecialchars(LocalizationUtility::translate('LLL:EXT:core/Resources/Private/Language/locallang_mod_web_list.xlf:delete'));
-        $overlayTitle = htmlspecialchars(LocalizationUtility::translate('LLL:EXT:core/Resources/Private/Language/locallang_alt_doc.xlf:label.confirm.delete_record.title'));
+        $overlayTitle = htmlspecialchars(LocalizationUtility::translate('LLL:EXT:backend/Resources/Private/Language/locallang_alt_doc.xlf:label.confirm.delete_record.title'));
 
         return '<a class="btn btn-default t3js-modal-trigger" href="' . htmlspecialchars($url) . '"'
             . ' data-severity="warning"'
             . ' title="' . $title . '"'
             . ' data-title="' . $overlayTitle . '"'
             . ' data-content="' . htmlspecialchars(LocalizationUtility::translate('confirm', 'backend_module', [$record])) . '" '
-            . ' data-button-close-text="' . htmlspecialchars($GLOBALS['LANG']->sL('LLL:EXT:lang/locallang_common.xlf:cancel')) . '"'
+            . ' data-button-close-text="' . htmlspecialchars($GLOBALS['LANG']->sL('LLL:EXT:core/Resources/Private/Language/locallang_common.xlf:cancel')) . '"'
             . '>' . $icon . '</a>';
     }
 }
