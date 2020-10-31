@@ -1,6 +1,5 @@
 <?php
-
-namespace LST\BackendModule\ViewHelpers\Button;
+declare(strict_types = 1);
 
 /***
  *
@@ -12,6 +11,8 @@ namespace LST\BackendModule\ViewHelpers\Button;
  *  (c) 2016 Christian Fries <christian.fries@lst.team>
  *
  ***/
+
+namespace LST\BackendModule\ViewHelpers\Button;
 
 use TYPO3\CMS\Core\Imaging\Icon;
 use TYPO3\CMS\Core\Imaging\IconFactory;

@@ -1,6 +1,5 @@
 <?php
-
-namespace LST\BackendModule\Traits;
+declare(strict_types = 1);
 
 /***
  *
@@ -12,6 +11,8 @@ namespace LST\BackendModule\Traits;
  *  (c) 2016 Christian Fries <christian.fries@lst.team>
  *
  ***/
+
+namespace LST\BackendModule\Traits;
 
 trait Deletable
 {

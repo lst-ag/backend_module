@@ -1,6 +1,5 @@
 <?php
-
-namespace LST\BackendModule\Controller;
+declare(strict_types = 1);
 
 /***
  *
@@ -12,6 +11,8 @@ namespace LST\BackendModule\Controller;
  *  (c) 2016 Christian Fries <christian.fries@lst.team>
  *
  ***/
+
+namespace LST\BackendModule\Controller;
 
 use TYPO3\CMS\Backend\Clipboard\Clipboard;
 use TYPO3\CMS\Backend\Routing\UriBuilder as BeUriBuilder;

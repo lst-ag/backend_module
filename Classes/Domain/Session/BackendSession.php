@@ -1,6 +1,5 @@
 <?php
-
-namespace LST\BackendModule\Domain\Session;
+declare(strict_types = 1);
 
 /***
  *
@@ -13,6 +12,8 @@ namespace LST\BackendModule\Domain\Session;
  *
  ***/
 
+namespace LST\BackendModule\Domain\Session;
+
 use TYPO3\CMS\Core\Authentication\BackendUserAuthentication;
 
 class BackendSession
@@ -22,7 +23,7 @@ class BackendSession
      *
      * @var BackendUserAuthentication
      */
-    protected $sessionObject = null;
+    protected $sessionObject;
 
     /**
      * Unique key to store data in the session.
