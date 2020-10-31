@@ -1,6 +1,5 @@
 <?php
-
-namespace LST\BackendModule\ViewHelpers\Link;
+declare(strict_types = 1);
 
 /***
  *
@@ -12,6 +11,8 @@ namespace LST\BackendModule\ViewHelpers\Link;
  *  (c) 2016 Christian Fries <christian.fries@lst.team>
  *
  ***/
+
+namespace LST\BackendModule\ViewHelpers\Link;
 
 use TYPO3\CMS\Backend\Routing\UriBuilder;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
@@ -56,7 +57,7 @@ class EditRecordViewHelper extends AbstractViewHelper
         ];
 
         $uriBuilder = GeneralUtility::makeInstance(UriBuilder::class);
-        $url = $uriBuilder->buildUriFromRoute('record_edit', $parameters);
+        $url = (string) $uriBuilder->buildUriFromRoute('record_edit', $parameters);
 
         $title = htmlspecialchars(LocalizationUtility::translate('LLL:EXT:core/Resources/Private/Language/locallang_mod_web_list.xlf:edit'));
 

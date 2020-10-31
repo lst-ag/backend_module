@@ -61,7 +61,7 @@ class AddRecordViewHelper extends AbstractViewHelper
         $icon = $iconFactory->getIcon('actions-add', Icon::SIZE_SMALL)->render();
 
         $uriBuilder = GeneralUtility::makeInstance(UriBuilder::class);
-        $url = $uriBuilder->buildUriFromRoute('record_edit', $parameters);
+        $url = (string) $uriBuilder->buildUriFromRoute('record_edit', $parameters);
 
         $title = htmlspecialchars(LocalizationUtility::translate('LLL:EXT:core/Resources/Private/Language/locallang_mod_web_list.xlf:newRecordGeneral'));
 

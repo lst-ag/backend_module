@@ -176,7 +176,7 @@ class BackendModuleActionController extends ActionController
         foreach ($this->menuItems as $menuItem) {
             $item = $menu->makeMenuItem()
                 ->setTitle($menuItem['label'])
-                ->setHref($uriBuilder->reset()->uriFor($menuItem['action'], [], $menuItem['controller']))
+                ->setHref((string) $uriBuilder->reset()->uriFor($menuItem['action'], [], $menuItem['controller']))
                 ->setActive($this->request->getControllerActionName() === $menuItem['action'] && $this->request->getControllerName() === $menuItem['controller']);
             $menu->addMenuItem($item);
         }
@@ -254,7 +254,7 @@ class BackendModuleActionController extends ActionController
 
         /** @var BeUriBuilder $uriBuilder */
         $uriBuilder = GeneralUtility::makeInstance(BeUriBuilder::class);
-        $url = $uriBuilder->buildUriFromRoute('record_edit', [
+        $url = (string) $uriBuilder->buildUriFromRoute('record_edit', [
             'edit[' . $table . '][' . $this->pageUid . ']' => 'new',
             'returnUrl' => $returnUrl
         ]);
@@ -286,7 +286,7 @@ class BackendModuleActionController extends ActionController
         $uriBuilder = $this->objectManager->get(UriBuilder::class);
         $uriBuilder->setRequest($this->request);
 
-        $url = $uriBuilder->reset()->setRequest($this->request)->uriFor($action, $arguments, $controller);
+        $url = (string) $uriBuilder->reset()->setRequest($this->request)->uriFor($action, $arguments, $controller);
 
         return [
             'type' => 'action',
@@ -370,7 +370,7 @@ class BackendModuleActionController extends ActionController
 
         /** @var BeUriBuilder $uriBuilder */
         $uriBuilder = GeneralUtility::makeInstance(BeUriBuilder::class);
-        $url = $uriBuilder->buildUriFromRoute('record_edit', [
+        $url = (string) $uriBuilder->buildUriFromRoute('record_edit', [
             'edit[' . $table . '][' . $this->pageUid . ']' => 'new',
             'returnUrl' => $returnUrl
         ]);
@@ -394,7 +394,7 @@ class BackendModuleActionController extends ActionController
 
         /** @var BeUriBuilder $uriBuilder */
         $uriBuilder = GeneralUtility::makeInstance(BeUriBuilder::class);
-        $url = $uriBuilder->buildUriFromRoute('record_edit', [
+        $url = (string) $uriBuilder->buildUriFromRoute('record_edit', [
             'edit[' . $table . '][' . $recordId . ']' => 'edit',
             'returnUrl' => $returnUrl
         ]);
@@ -438,7 +438,7 @@ class BackendModuleActionController extends ActionController
 
         /** @var BeUriBuilder $uriBuilder */
         $uriBuilder = GeneralUtility::makeInstance(BeUriBuilder::class);
-        $returnUrl = $uriBuilder->buildUriFromRoute($this->moduleName, $parameter);
+        $returnUrl = (string) $uriBuilder->buildUriFromRoute($this->moduleName, $parameter);
 
         return $returnUrl;
     }

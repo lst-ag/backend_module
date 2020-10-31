@@ -62,7 +62,7 @@ class RemoveCoreRecordViewHelper extends AbstractViewHelper
         ];
 
         $uriBuilder = GeneralUtility::makeInstance(UriBuilder::class);
-        $url = $uriBuilder->buildUriFromRoute('tce_db', $urlParameters);
+        $url = (string) $uriBuilder->buildUriFromRoute('tce_db', $urlParameters);
 
         $title = htmlspecialchars(LocalizationUtility::translate('LLL:EXT:core/Resources/Private/Language/locallang_mod_web_list.xlf:delete'));
         $overlayTitle = htmlspecialchars(LocalizationUtility::translate('LLL:EXT:core/Resources/Private/Language/locallang_alt_doc.xlf:label.confirm.delete_record.title'));
