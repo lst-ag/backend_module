@@ -1,5 +1,10 @@
 # Change log
 
+## Version 2.2.0
+- Use `declare(strict_types = 1)` everywhere
+- Explicitly cast Uri objects to string
+- Replace missing labels
+
 ## Version 2.1.0
 - Add configuration for Symfony dependency injection
 - Bring back `$_EXTKEY` in `ext_emconf.php` due to TER limitations
