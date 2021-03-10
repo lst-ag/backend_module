@@ -25,5 +25,10 @@
     "psr-4": {
       "LST\\BackendModule\\": "Classes"
     }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "backend_module"
+    }
   }
 }

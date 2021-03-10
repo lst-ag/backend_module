@@ -1,5 +1,8 @@
 # Change log
 
+## dev-master
+- Add extension key to composer configuration
+
 ## Version 2.2.0
 - Use `declare(strict_types = 1)` everywhere
 - Explicitly cast Uri objects to string
