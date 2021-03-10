@@ -19,4 +19,4 @@ This extension supports TYPO3 9 LTS and TYPO3 10 LTS.
 
 ## Change log
 
-You can find the change log [here](CHANGELOG.md).
+You can find the change log [here](./Documentation/ChangeLog.md).
