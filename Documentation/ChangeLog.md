@@ -1,6 +1,6 @@
 # Change log
 
-## dev-master
+## v2.2.1
 - Add extension key to composer configuration
 
 ## v2.2.0
